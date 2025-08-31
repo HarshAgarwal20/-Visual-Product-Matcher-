@@ -17,6 +17,11 @@ from PIL import Image
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello from backend 👋 Your API is live!"}
+    
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Change for production
