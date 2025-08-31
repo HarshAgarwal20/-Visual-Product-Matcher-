@@ -2,6 +2,7 @@ uvicorn
 pymupdf
 fastapi
 python-multipart
-
+requests
 numpy==2.1.3
+
 
