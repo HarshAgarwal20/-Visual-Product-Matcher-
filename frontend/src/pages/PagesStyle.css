@@ -1,0 +1,41 @@
+.page-container {
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.file-input, .url-input {
+  margin-top: 12px;
+  padding: 6px;
+  width: 300px;
+}
+
+.search-button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin-top: 8px;
+}
+
+.results-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.image-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  object-fit: cover;
+}

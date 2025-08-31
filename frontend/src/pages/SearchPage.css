@@ -1,0 +1,111 @@
+/* Container styling */
+.search-page {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+.search-page h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Input container */
+.search-inputs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* File and URL inputs */
+.search-inputs input[type="file"],
+.search-inputs input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.search-inputs input[type="text"] {
+  flex-grow: 2;
+  min-width: 300px;
+}
+
+/* Search button */
+.search-inputs button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-inputs button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Error message */
+.error-msg {
+  margin-bottom: 1rem;
+  color: red;
+  font-weight: bold;
+}
+
+/* Results grid */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Empty results message */
+.results-grid .no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #555;
+}
+
+/* Image card */
+.image-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Card image */
+.image-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card text */
+.image-card .card-text {
+  padding: 0.5rem;
+}
+
+.image-card .card-text .filename {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.image-card .card-text .score {
+  font-size: 0.8rem;
+  color: #666;
+}
