@@ -97,7 +97,10 @@ export default function SearchPage() {
         ) : (
           results.map((r, i) => (
             <div key={i} className="image-card">
-              <img src={`${API_URL}${r.url}`} alt={r.filename} />
+             <img 
+      src={r.url.startsWith("http") ? r.url : `${API_URL}${r.url}`} 
+      alt={r.filename} 
+    />
               <div className="card-text">
                 <div className="filename">{r.filename}</div>
                 <div className="score">Score: {r.score.toFixed(3)}</div>
